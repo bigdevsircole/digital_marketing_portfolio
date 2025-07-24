@@ -92,7 +92,7 @@ nav {
     align-items: center;
     padding: 0 10%;
     background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), 
-                url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+                url('./assets/images/background-photo.jpg') no-repeat center center/cover;
 }
 
 .hero-content {
@@ -461,6 +461,13 @@ nav {
     border-radius: 4px;
     color: var(--text-primary);
     font-size: 1rem;
+    font-family: 'Calibri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-secondary);
+    font-family: 'Calibri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form textarea {
@@ -483,6 +490,12 @@ nav {
     background: transparent;
     color: var(--accent-teal);
     border: 1px solid var(--accent-teal);
+}
+
+#form-status {
+    margin-top: 1rem;
+    color: var(--accent-teal);
+    text-align: center;
 }
 
 /* Footer */

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Marketing Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init('y-fZwQR7f20KakfWJ');
+    })();
+  </script>
 </head>
 <body>
     <!-- Header -->
@@ -145,7 +151,7 @@
         <h2 class="section-title">My Portfolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="./assets/images/increased-sales-by-150%.jpg" alt="Marketing Campaign" class="portfolio-image">
+                <img src="./assets/images/increased-sales.jpg" alt="Marketing Campaign" class="portfolio-image">
                 <div class="portfolio-overlay">
                     <h3 class="portfolio-title">Instagram Growth Campaign</h3>
                     <p class="portfolio-category">Social Media Advertising</p>
@@ -190,18 +196,18 @@
                 <p><i class="fas fa-envelope"></i> caleb.yinusa@gmail.com</p>
                 <p><i class="fas fa-phone"></i> +234 818 040 2086</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+2348180402086" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/calebyinusa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@calebyinusa?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="submit-btn">Send Message</button>
+                <p id="form-status"></p>
             </form>
         </div>
     </section>
